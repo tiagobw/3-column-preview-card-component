@@ -1,0 +1,12 @@
+{
+  "name": "3-column-preview-card-component",
+  "version": "1.0.0",
+  "description": "This is a solution to the 3-column preview card component challenge on Frontend Mentor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
