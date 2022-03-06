@@ -8,7 +8,7 @@
     "dev:tailwind": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
     "dev:browser-sync": "browser-sync start --proxy \"127.0.0.1:5500\" --files \"dist/*.css\"",
     "build": "npm run build:tailwind && npm run build:copy",
-    "build:tailwind": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "build:tailwind": "tailwindcss ./src/input.css -o ./dist/output.css --minify",
     "build:copy": "copyfiles -f ./src/images/* dist/images && copyfiles -f ./src/index.html dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
