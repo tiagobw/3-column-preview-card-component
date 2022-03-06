@@ -1,7 +1,11 @@
 module.exports = {
   content: ['./src/**/*.{html,js}'],
   theme: {
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        'cards-horizontal': 'repeat(3, 20rem)',
+      },
+    },
     colors: {
       'bright-orange': '#e38826',
       'dark-cyan': '#006970',
