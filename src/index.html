@@ -19,19 +19,24 @@
     <link href="/dist/output.css" rel="stylesheet" />
     <title>Frontend Mentor | 3-column preview card component</title>
   </head>
-  <body class="h-screen flex justify-center items-center">
-    <main class="w-80">
-      <article class="bg-bright-orange">
+  <body class="flex justify-center items-center py-12">
+    <main class="w-80 grid">
+      <article class="bg-bright-orange p-12 rounded-t-lg">
         <img
           src="./images/icon-sedans.svg"
           alt="A circle and a sedan car overlapping the right side of the circle"
         />
-        <h1>Sedans</h1>
-        <p>
+        <h1 class="text-very-light-gray text-5xl uppercase my-10">Sedans</h1>
+        <p class="text-white opacity-75">
           Choose a sedan for its affordability and excellent fuel economy. Ideal
           for cruising in the city or on your next road trip.
         </p>
-        <a href="#" role="button">Learn More</a>
+        <a
+          class="bg-very-light-gray text-bright-orange text-lg px-8 py-3 rounded-3xl inline-block mt-10"
+          href="#"
+          role="button"
+          >Learn More</a
+        >
       </article>
       <article>
         <img
