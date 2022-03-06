@@ -4,7 +4,7 @@
   "description": "This is a solution to the 3-column preview card component challenge on Frontend Mentor",
   "main": "index.js",
   "scripts": {
-    "tailwind:watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
     "build:tailwind": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
     "build:copy": "copyfiles -f ./src/images/* dist/images && copyfiles -f ./src/index.html dist",
     "build": "npm run build:tailwind && npm run build:copy",
