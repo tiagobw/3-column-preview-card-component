@@ -7,17 +7,19 @@
     "dev": "npm run dev:tailwind && npm run dev:browser-sync",
     "dev:tailwind": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
     "dev:browser-sync": "browser-sync start --proxy \"127.0.0.1:5500\" --files \"dist/*.css\"",
-    "build": "npm run build:tailwind && npm run build:copy",
+    "build": "npm run build:tailwind && npm run build:copy && npm run build:replace",
     "build:tailwind": "tailwindcss ./src/input.css -o ./dist/output.css --minify",
     "build:copy": "copyfiles -f ./src/images/* dist/images && copyfiles -f ./src/index.html dist",
+    "build:replace": "node ./replaceInFile.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.27.7",
+    "browser-sync": "^0.9.1",
     "copyfiles": "^2.4.1",
+    "replace-in-file": "^6.3.2",
     "tailwindcss": "^3.0.23"
   }
 }
